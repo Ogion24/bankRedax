@@ -5,7 +5,7 @@ export const createStore = (reducer, initialState) => {
     const getState = () => state;
 
     const dispatch = action => {
-        state = reducer(state, action);
+        state = reducer(state, action);// pure  function
         subscribers.forEach(subscriber => subscriber());//оббегает массив и вызываем все функции,которые там есть
     }
     const subscribe = listener => {// подписчик
