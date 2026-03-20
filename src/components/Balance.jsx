@@ -2,7 +2,7 @@ import {store} from "../configureStore/store.js";
 import {useSyncExternalStore} from "react";
 
 const Balance = () => {
-     const {balance} = useSyncExternalStore(store.subscribe, store.getState)//встроенный хук: подпишется и
+     const {balance} = useSyncExternalStore(store.subscribe, store.getState)//ререндеринг =встроенный хук: подпишется и
     // при любом изменении state и вызовет getState и результат положит в баланс
     return (
         <div>

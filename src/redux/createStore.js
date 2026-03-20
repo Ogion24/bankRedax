@@ -12,5 +12,5 @@ export const createStore = (reducer, initialState) => {
         subscribers.push(listener);//при изменении state-> уведомляет листенеров
         return() => subscribers = subscribers.filter(subscriber => subscriber !== listener); // создает фильтр в массиве всех субскрайберов кроме листенера
     }
-    return{getState,dispatch,subscribe};
+    return{getState,dispatch,subscribe};//получаем 3 метода
 }
