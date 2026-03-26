@@ -1,8 +1,9 @@
-import {createStore} from "redux";
+import {legacy_createStore as createStore} from "redux";
 import {accountReducer} from "../reducer/accountReducer.js";
 
 const initialState = {
-    balance: 0
-}
-export const store = createStore(accountReducer, initialState);
+    balance: 0,
+    quote: 'Winter is coming...'
+};
 
+export const store = createStore(accountReducer, initialState);
