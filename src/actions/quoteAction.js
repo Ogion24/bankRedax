@@ -5,7 +5,7 @@ export const putQuote = quote => ({
     payload: quote
 });
 export  const fetchQuote = () =>  {// action creator в котором можно задиспатчить функцию
-    return dispatch => {
+    return dispatch => {// callback для dispatch ---> Operation-->>36
         dispatch(putQuote('Pending...'))
         fetch('https://api.gameofthronesquotes.xyz/v1/random')
             .then(response => response.json())
