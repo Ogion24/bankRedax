@@ -1,7 +1,7 @@
 import {useState} from "react";
-import {deposit, withdraw} from "../actions/accountActions.js";
+import {deposit, withdraw} from "../features/balance/balanceSlice.js";
 import {useDispatch} from "react-redux";
-import {fetchQuote} from "../actions/quoteAction.js";
+import {fetchQuote} from "../features/api/quoteAction.js";
 
 
 const Operation = () => {

@@ -1,9 +1,5 @@
-export const PUT_QUOTE = 'PUT_QUOTE';
+import {putQuote} from "../quote/quoteSlice.js";
 
-export const putQuote = quote => ({
-    type: PUT_QUOTE,
-    payload: quote
-});
 export  const fetchQuote = () =>  {// action creator в котором можно задиспатчить функцию
     return dispatch => {// callback для dispatch ---> Operation-->>36
         dispatch(putQuote('Pending...'))
